@@ -1,0 +1,55 @@
+{
+  "name": "yuki",
+  "version": "1.0.0",
+  "description": "Order African food from anywhere, securely",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/houstonblockchain/yuki.git"
+  },
+  "keywords": [
+    "blockchain",
+    "food",
+    "delivery",
+    "african",
+    "food"
+  ],
+  "author": "Osayuki Bigie",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/houstonblockchain/yuki/issues"
+  },
+  "homepage": "https://github.com/houstonblockchain/yuki#readme",
+  "devDependencies": {
+    "fuse-box": "^3.3.0",
+    "autoprefixer": "^8.6.4",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.1",
+    "postcss-loader": "^2.1.5",
+    "precss": "^3.1.2",
+    "protobufjs": "^6.8.6",
+    "sass-loader": "^7.0.3",
+    "standard": "^11.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.15.1",
+    "webpack-dev-server": "^3.1.4"
+
+  },
+  "dependencies": {
+    "uport": "^0.6.2",
+    "bootstrap": "^4.1.1",
+    "chart.js": "^2.7.2",
+    "google-maps": "^3.3.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "mithril": "^1.1.6",
+    "moment": "^2.22.2",
+    "octicons": "^7.3.0",
+    "popper.js": "^1.14.3",
+    "sawtooth-sdk": "^1.0.4",
+    "sjcl": "^1.0.7"
+  }
+}
