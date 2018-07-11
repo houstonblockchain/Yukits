@@ -36,10 +36,9 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.15.1",
     "webpack-dev-server": "^3.1.4"
-
   },
   "dependencies": {
-    "uport": "^0.6.2",
+    "accesscontrol": "^2.2.1",
     "bootstrap": "^4.1.1",
     "chart.js": "^2.7.2",
     "google-maps": "^3.3.0",
@@ -50,6 +49,7 @@
     "octicons": "^7.3.0",
     "popper.js": "^1.14.3",
     "sawtooth-sdk": "^1.0.4",
-    "sjcl": "^1.0.7"
+    "sjcl": "^1.0.7",
+    "uport": "^0.6.2"
   }
 }
