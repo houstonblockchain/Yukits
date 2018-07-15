@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      IPropertyValue - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      African Menu
+    </h3>
+
+    <h3>Classes</h3><ul><li id="BusinessConstruct-nav"><a href="BusinessConstruct.html">BusinessConstruct</a></li><li id="Location-nav"><a href="Location.html">Location</a><ul class='methods'><li data-type="method" id="Location-create-nav"><a href="Location.html#.create">create</a></li><li data-type="method" id="Location-decode-nav"><a href="Location.html#.decode">decode</a></li><li data-type="method" id="Location-decodeDelimited-nav"><a href="Location.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="Location-encode-nav"><a href="Location.html#.encode">encode</a></li><li data-type="method" id="Location-encodeDelimited-nav"><a href="Location.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="Location-fromObject-nav"><a href="Location.html#.fromObject">fromObject</a></li><li data-type="method" id="Location-toObject-nav"><a href="Location.html#.toObject">toObject</a></li><li data-type="method" id="Location-verify-nav"><a href="Location.html#.verify">verify</a></li><li data-type="method" id="Location-toJSON-nav"><a href="Location.html#toJSON">toJSON</a></li></ul></li><li id="Property-nav"><a href="Property.html">Property</a><ul class='methods'><li data-type="method" id="Property-create-nav"><a href="Property.html#.create">create</a></li><li data-type="method" id="Property-decode-nav"><a href="Property.html#.decode">decode</a></li><li data-type="method" id="Property-decodeDelimited-nav"><a href="Property.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="Property-encode-nav"><a href="Property.html#.encode">encode</a></li><li data-type="method" id="Property-encodeDelimited-nav"><a href="Property.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="Property-fromObject-nav"><a href="Property.html#.fromObject">fromObject</a></li><li data-type="method" id="Property-toObject-nav"><a href="Property.html#.toObject">toObject</a></li><li data-type="method" id="Property-verify-nav"><a href="Property.html#.verify">verify</a></li><li data-type="method" id="Property-toJSON-nav"><a href="Property.html#toJSON">toJSON</a></li></ul></li><li id="Reporter-nav"><a href="Property.Reporter.html">Reporter</a><ul class='methods'><li data-type="method" id="Reporter-create-nav"><a href="Property.Reporter.html#.create">create</a></li><li data-type="method" id="Reporter-decode-nav"><a href="Property.Reporter.html#.decode">decode</a></li><li data-type="method" id="Reporter-decodeDelimited-nav"><a href="Property.Reporter.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="Reporter-encode-nav"><a href="Property.Reporter.html#.encode">encode</a></li><li data-type="method" id="Reporter-encodeDelimited-nav"><a href="Property.Reporter.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="Reporter-fromObject-nav"><a href="Property.Reporter.html#.fromObject">fromObject</a></li><li data-type="method" id="Reporter-toObject-nav"><a href="Property.Reporter.html#.toObject">toObject</a></li><li data-type="method" id="Reporter-verify-nav"><a href="Property.Reporter.html#.verify">verify</a></li><li data-type="method" id="Reporter-toJSON-nav"><a href="Property.Reporter.html#toJSON">toJSON</a></li></ul></li><li id="PropertyContainer-nav"><a href="PropertyContainer.html">PropertyContainer</a><ul class='methods'><li data-type="method" id="PropertyContainer-create-nav"><a href="PropertyContainer.html#.create">create</a></li><li data-type="method" id="PropertyContainer-decode-nav"><a href="PropertyContainer.html#.decode">decode</a></li><li data-type="method" id="PropertyContainer-decodeDelimited-nav"><a href="PropertyContainer.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="PropertyContainer-encode-nav"><a href="PropertyContainer.html#.encode">encode</a></li><li data-type="method" id="PropertyContainer-encodeDelimited-nav"><a href="PropertyContainer.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="PropertyContainer-fromObject-nav"><a href="PropertyContainer.html#.fromObject">fromObject</a></li><li data-type="method" id="PropertyContainer-toObject-nav"><a href="PropertyContainer.html#.toObject">toObject</a></li><li data-type="method" id="PropertyContainer-verify-nav"><a href="PropertyContainer.html#.verify">verify</a></li><li data-type="method" id="PropertyContainer-toJSON-nav"><a href="PropertyContainer.html#toJSON">toJSON</a></li></ul></li><li id="PropertyPage-nav"><a href="PropertyPage.html">PropertyPage</a><ul class='methods'><li data-type="method" id="PropertyPage-create-nav"><a href="PropertyPage.html#.create">create</a></li><li data-type="method" id="PropertyPage-decode-nav"><a href="PropertyPage.html#.decode">decode</a></li><li data-type="method" id="PropertyPage-decodeDelimited-nav"><a href="PropertyPage.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="PropertyPage-encode-nav"><a href="PropertyPage.html#.encode">encode</a></li><li data-type="method" id="PropertyPage-encodeDelimited-nav"><a href="PropertyPage.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="PropertyPage-fromObject-nav"><a href="PropertyPage.html#.fromObject">fromObject</a></li><li data-type="method" id="PropertyPage-toObject-nav"><a href="PropertyPage.html#.toObject">toObject</a></li><li data-type="method" id="PropertyPage-verify-nav"><a href="PropertyPage.html#.verify">verify</a></li><li data-type="method" id="PropertyPage-toJSON-nav"><a href="PropertyPage.html#toJSON">toJSON</a></li></ul></li><li id="ReportedValue-nav"><a href="PropertyPage.ReportedValue.html">ReportedValue</a><ul class='methods'><li data-type="method" id="ReportedValue-create-nav"><a href="PropertyPage.ReportedValue.html#.create">create</a></li><li data-type="method" id="ReportedValue-decode-nav"><a href="PropertyPage.ReportedValue.html#.decode">decode</a></li><li data-type="method" id="ReportedValue-decodeDelimited-nav"><a href="PropertyPage.ReportedValue.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="ReportedValue-encode-nav"><a href="PropertyPage.ReportedValue.html#.encode">encode</a></li><li data-type="method" id="ReportedValue-encodeDelimited-nav"><a href="PropertyPage.ReportedValue.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="ReportedValue-fromObject-nav"><a href="PropertyPage.ReportedValue.html#.fromObject">fromObject</a></li><li data-type="method" id="ReportedValue-toObject-nav"><a href="PropertyPage.ReportedValue.html#.toObject">toObject</a></li><li data-type="method" id="ReportedValue-verify-nav"><a href="PropertyPage.ReportedValue.html#.verify">verify</a></li><li data-type="method" id="ReportedValue-toJSON-nav"><a href="PropertyPage.ReportedValue.html#toJSON">toJSON</a></li></ul></li><li id="PropertyPageContainer-nav"><a href="PropertyPageContainer.html">PropertyPageContainer</a><ul class='methods'><li data-type="method" id="PropertyPageContainer-create-nav"><a href="PropertyPageContainer.html#.create">create</a></li><li data-type="method" id="PropertyPageContainer-decode-nav"><a href="PropertyPageContainer.html#.decode">decode</a></li><li data-type="method" id="PropertyPageContainer-decodeDelimited-nav"><a href="PropertyPageContainer.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="PropertyPageContainer-encode-nav"><a href="PropertyPageContainer.html#.encode">encode</a></li><li data-type="method" id="PropertyPageContainer-encodeDelimited-nav"><a href="PropertyPageContainer.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="PropertyPageContainer-fromObject-nav"><a href="PropertyPageContainer.html#.fromObject">fromObject</a></li><li data-type="method" id="PropertyPageContainer-toObject-nav"><a href="PropertyPageContainer.html#.toObject">toObject</a></li><li data-type="method" id="PropertyPageContainer-verify-nav"><a href="PropertyPageContainer.html#.verify">verify</a></li><li data-type="method" id="PropertyPageContainer-toJSON-nav"><a href="PropertyPageContainer.html#toJSON">toJSON</a></li></ul></li><li id="PropertySchema-nav"><a href="PropertySchema.html">PropertySchema</a><ul class='methods'><li data-type="method" id="PropertySchema-create-nav"><a href="PropertySchema.html#.create">create</a></li><li data-type="method" id="PropertySchema-decode-nav"><a href="PropertySchema.html#.decode">decode</a></li><li data-type="method" id="PropertySchema-decodeDelimited-nav"><a href="PropertySchema.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="PropertySchema-encode-nav"><a href="PropertySchema.html#.encode">encode</a></li><li data-type="method" id="PropertySchema-encodeDelimited-nav"><a href="PropertySchema.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="PropertySchema-fromObject-nav"><a href="PropertySchema.html#.fromObject">fromObject</a></li><li data-type="method" id="PropertySchema-toObject-nav"><a href="PropertySchema.html#.toObject">toObject</a></li><li data-type="method" id="PropertySchema-verify-nav"><a href="PropertySchema.html#.verify">verify</a></li><li data-type="method" id="PropertySchema-toJSON-nav"><a href="PropertySchema.html#toJSON">toJSON</a></li></ul></li><li id="PropertyValue-nav"><a href="PropertyValue.html">PropertyValue</a><ul class='methods'><li data-type="method" id="PropertyValue-create-nav"><a href="PropertyValue.html#.create">create</a></li><li data-type="method" id="PropertyValue-decode-nav"><a href="PropertyValue.html#.decode">decode</a></li><li data-type="method" id="PropertyValue-decodeDelimited-nav"><a href="PropertyValue.html#.decodeDelimited">decodeDelimited</a></li><li data-type="method" id="PropertyValue-encode-nav"><a href="PropertyValue.html#.encode">encode</a></li><li data-type="method" id="PropertyValue-encodeDelimited-nav"><a href="PropertyValue.html#.encodeDelimited">encodeDelimited</a></li><li data-type="method" id="PropertyValue-fromObject-nav"><a href="PropertyValue.html#.fromObject">fromObject</a></li><li data-type="method" id="PropertyValue-toObject-nav"><a href="PropertyValue.html#.toObject">toObject</a></li><li data-type="method" id="PropertyValue-verify-nav"><a href="PropertyValue.html#.verify">verify</a></li><li data-type="method" id="PropertyValue-toJSON-nav"><a href="PropertyValue.html#toJSON">toJSON</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#actionMethods">actionMethods</a></li><li><a href="global.html#addressFormat">addressFormat</a></li><li><a href="global.html#changePassword">changePassword</a></li><li><a href="global.html#clearPrivateKey">clearPrivateKey</a></li><li><a href="global.html#encode">encode</a></li><li><a href="global.html#floatifyValue">floatifyValue</a></li><li><a href="global.html#formatTimestamp">formatTimestamp</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#getAuth">getAuth</a></li><li><a href="global.html#getPrivateKey">getPrivateKey</a></li><li><a href="global.html#getPublicKey">getPublicKey</a></li><li><a href="global.html#hashPassword">hashPassword</a></li><li><a href="global.html#makePrivateKey">makePrivateKey</a></li><li><a href="global.html#postBinary">postBinary</a></li><li><a href="global.html#request">request</a></li><li><a href="global.html#setPrivateKey">setPrivateKey</a></li><li><a href="global.html#stringifyValue">stringifyValue</a></li><li><a href="global.html#submit">submit</a></li><li><a href="global.html#toFloat">toFloat</a></li><li><a href="global.html#%257Bstring%257DnameReturnsthecancatenationoffirstNameandlastName">{string} name Returns the cancatenation of firstName and lastName</a></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        IPropertyValue
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        IPropertyValue
+        
+      </h2>
+
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+            <div class="description">
+              Properties of a PropertyValue.
+            </div>
+        
+
+        
+
+  <h5 class="subsection-title">Properties:</h5>
+
+  
+
+<table class="props">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+
+    <tr>
+      
+        <td class="name"><code>name</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      string
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue name
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>dataType</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      <a href="PropertySchema.html#.DataType">PropertySchema.DataType</a>
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue dataType
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>bytesValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      Uint8Array
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue bytesValue
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>booleanValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      boolean
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue booleanValue
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>numberValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      number
+    </span>
+
+    |
+
+    <span class="param-type">
+      Long
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue numberValue
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>stringValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      string
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue stringValue
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>enumValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      string
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue enumValue
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>structValues</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      Array.&lt;<a href="IPropertyValue.html">IPropertyValue</a>>
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue structValues
+          </td>
+    </tr>
+
+  
+
+    <tr>
+      
+        <td class="name"><code>locationValue</code></td>
+      
+
+      <td class="type">
+        
+          
+    <span class="param-type">
+      <a href="ILocation.html">ILocation</a>
+    </span>
+
+    |
+
+    <span class="param-type">
+      null
+    </span>
+
+    
+
+
+        
+      </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          PropertyValue locationValue
+          </td>
+    </tr>
+
+  
+  </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="views_ratingsHistory.js.html">views/ratingsHistory.js</a>, <a href="views_ratingsHistory.js.html#line1393">line 1393</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+  
+</body>
+</html>
