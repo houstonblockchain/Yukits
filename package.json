@@ -41,6 +41,7 @@
   "dependencies": {
     "accesscontrol": "^2.2.1",
     "bootstrap": "^4.1.1",
+    "cargo": "^0.8.0",
     "chart.js": "^2.7.2",
     "google-maps": "^3.3.0",
     "jquery": "^3.3.1",

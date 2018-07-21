@@ -20,17 +20,17 @@ let sLinks = {
 
 /**
  * africanMenu
- * 
- * @interface a blockchain platform where African restaurants present menu items and African food 
+ *
+ * @interface a blockchain platform where African restaurants present menu items and African food
  * lovers buy food directly from their menu.
  *
- * @param secureLogin A secure way for customors to authenticate their account on the platform
+ * @param secureLogin A secure way for customers to authenticate their account on the platform
  * @param secureTransactions A secure way for users to securely transact on the platform
  *
  * @requires uport for secureLogin
  * @requires hyperledgerSawtooth for secureTransactions
  *
- * 
+ *
  * @returns A crudSASS method for securely interacting on the platform
  * @returns A method that crudSASS personalInfo
  * @returns A method that crudSASS personalTransactions
